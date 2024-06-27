@@ -16,7 +16,7 @@
 
   <ion-list>
     <ion-list-header>
-      <ion-label>Productos Destacados</ion-label>
+      <ion-label>Destacados</ion-label>
     </ion-list-header>
     @for (product of products; track product._id) {
     <ion-item>
@@ -26,6 +26,7 @@
       <ion-label>
         <h2>{{product.name}}</h2>
         <p>{{product.description}}</p>
+        <p>{{product.price}}</p>
       </ion-label>
     </ion-item>
     }
